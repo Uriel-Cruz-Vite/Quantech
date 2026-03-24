@@ -1,0 +1,15 @@
+<svg width="400" height="80" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Transparent background -->
+  <rect width="400" height="80" fill="none"/>
+
+  <!-- Blue rounded-square icon (scaled proportionally) -->
+  <rect x="0" y="12" width="64" height="64" rx="16" fill="#1F6FEB"/>
+
+  <!-- </> symbol centered inside icon -->
+  <text x="32" y="52" font-size="35" font-family="Arial" fill="white" text-anchor="middle">&lt;/&gt;</text>
+
+  <!-- PymeDev text in black for light version -->
+  <text x="84" y="56" font-size="45" font-family="Arial" fill="#000000">PymeDev</text>
+
+</svg>
