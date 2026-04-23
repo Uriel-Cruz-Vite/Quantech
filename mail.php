@@ -4,6 +4,8 @@
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
         $name = str_replace(array("\r","\n"),array(" "," "),$name);
+        $company = strip_tags(trim($_POST["company"]));
+        $company = str_replace(array("\r","\n"),array(" "," "),$company);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $subject = trim($_POST["subject"]);
         $phone = trim($_POST["phone"]);
@@ -26,6 +28,7 @@
 
         // Build the email content.
         $email_content = "Name: $name  \r\n\n";
+        $email_content .= "Company: $company \r\n\n";
         $email_content .= "Email: $email \r\n\n";
         $email_content .= "Subject: $subject \r\n\n";
         $email_content .= "Phone: $phone \r\n\n";
